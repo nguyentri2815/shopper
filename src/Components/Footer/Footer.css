@@ -6,6 +6,14 @@
 
 .footer-logo{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-logo p{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .footer-links {
@@ -14,6 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin: 20px 0;
 }
 
 .footer-social-icons {

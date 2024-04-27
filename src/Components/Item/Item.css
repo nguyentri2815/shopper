@@ -1,0 +1,20 @@
+.item img {
+    width: 100%;
+}
+
+.item p {
+    margin: 15px 0;
+}
+
+.item-price {
+    display: flex;
+    gap: 30px;
+}
+
+.item-new-price {
+    font-weight: bold;
+}
+
+.item-old-price {
+    text-decoration: line-through;
+}

@@ -1,0 +1,22 @@
+.newCollection{
+    padding: 20px 0;
+}
+.newCollection h2{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.newCollection h2 hr{
+    width: 80px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+}
+.newCollection-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    gap: 30px;
+}

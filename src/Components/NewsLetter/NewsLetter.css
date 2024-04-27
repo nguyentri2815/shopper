@@ -1,0 +1,41 @@
+.newLetter .container{
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+padding: 60px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.newLetter h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.newLetter p{
+    margin-bottom: 15px;
+}
+.newLetter-subscribe{
+    display: flex;
+    align-items: stretch;
+}
+.newLetter-subscribe input{
+    width: 300px;
+    padding-right: 46px;
+}
+.newLetter-subscribe input,button{
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 999px;
+}
+.newLetter-subscribe button{
+    width: 100px;
+    margin-left: -40px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}

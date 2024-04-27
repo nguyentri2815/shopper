@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="container footer">
       <div className="footer-logo">
         <Link to='/'><img src={logo} alt="logo" /></Link>
+        <p>SHOPPER</p>
       </div>
       <ul className="footer-links">
         <li>Company</li>
