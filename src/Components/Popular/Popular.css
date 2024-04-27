@@ -1,0 +1,21 @@
+.popular{
+    padding: 20px 0;
+}
+.popular h2{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.popular h2 hr{
+    width: 80px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+}
+.popular-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

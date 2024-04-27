@@ -1,0 +1,40 @@
+.offers {}
+
+.offers .container {
+    background: #FEAC5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.offers-left h2 {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: black;
+}
+
+.offers-left h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.offers-left button {
+    width: 150px;
+    height: 40px;
+    border-radius: 999px;
+    outline: none;
+    border: 1px solid black;
+    background: red;
+    color: #f0ebeb;
+    cursor: pointer;
+}
+
+.offers-left button:active {
+    background: #ab2a2a;
+}
