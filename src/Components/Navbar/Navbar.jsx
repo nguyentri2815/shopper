@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart from "../Assets/cart_icon.png";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("shop");
-
+  const { getTotalCartItem, category, setCategory} = useContext(ShopContext);
   return (
     <div className="navbar">
       <div className="container">
@@ -16,21 +16,21 @@ const Navbar = () => {
           <p>SHOPPER</p>
         </Link>
         <ul className="navbar-menu">
-          <li onClick={() => setMenu("shop")}>
+          <li onClick={() => setCategory("shop")}>
             <Link to="/">Shop</Link>
-            {menu === "shop" ? <hr /> : null}
+            {category === "shop" ? <hr /> : null}
           </li>
-          <li onClick={() => setMenu("men")}>
+          <li onClick={() => setCategory("men")}>
             <Link to="/mens">Men </Link>
-            {menu === "men" ? <hr /> : null}
+            {category === "men" ? <hr /> : null}
           </li>
-          <li onClick={() => setMenu("woment")}>
+          <li onClick={() => setCategory("women")}>
             <Link to="/woments">Woment </Link>{" "}
-            {menu === "woment" ? <hr /> : null}
+            {category === "women" ? <hr /> : null}
           </li>
-          <li onClick={() => setMenu("kinds")}>
+          <li onClick={() => setCategory("kid")}>
             <Link to="/kinds">Kids </Link>
-            {menu === "kinds" ? <hr /> : null}
+            {category === "kid" ? <hr /> : null}
           </li>
         </ul>
         <div className="navbar-login-cart">
@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link to="/cart">
               <img src={cart} alt="" />
             </Link>
-            <span className="navbar-count">0</span>
+            <span className="navbar-count">{+getTotalCartItem()}</span>
           </div>
         </div>
       </div>
