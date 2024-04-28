@@ -1,5 +1,13 @@
+.item{
+    overflow: hidden;
+}
 .item img {
     width: 100%;
+    transition: all .2s ease-in-out;
+    
+}
+.item img:hover{
+    transform: scale(1.1);
 }
 
 .item p {

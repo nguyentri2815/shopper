@@ -1,0 +1,24 @@
+.relatedProducts {
+    padding: 20px 0;
+}
+
+.relatedProducts h2 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.relatedProducts h2 hr {
+    width: 80px;
+    margin: 0 auto;
+    height: 2px;
+    background: black;
+}
+
+.relatedProducts-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
