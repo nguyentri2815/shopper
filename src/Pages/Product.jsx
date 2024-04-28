@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import BreadCrums from '../Components/BreadCrums/BreadCrums'
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../Context/ShopContext';
@@ -8,8 +8,11 @@ import RelatedProducts from '../Components/RelatedProducts/RelatedProducts';
 
 const Product = (props) => {
   let { productId } = useParams();
-  const {all_product} = useContext(ShopContext)
+  const {all_product,setCategory} = useContext(ShopContext)
   const product = all_product.find(item => item.id === Number(productId));
+  useEffect(() => {
+    setCategory(product.category)
+  }, [product]);
   return (
     <div className="product">
       <div className='container'>
